@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    @stations = Nrel.new
+    @stations = NrelService.new
     @stations.conn
   end
 end
