@@ -10,5 +10,6 @@ feature "User can search for nearby gas stations by zip code" do
       end
 
   scenario  "And the stations should be limited to Electric and Propane. And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times " do
+    expect(page).to have_content("10 Results")
   end
 end
