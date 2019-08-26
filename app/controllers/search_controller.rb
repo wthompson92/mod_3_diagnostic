@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    @stations = StationFacade.all
+    @stations = Nrel.new
+    @stations.conn
   end
 end
