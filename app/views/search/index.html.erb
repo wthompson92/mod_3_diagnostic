@@ -1,1 +1,11 @@
-<h3></h3>
+<h3> Closest Gas Stations</h3>
+<ol>
+  <% @stations.each do |station| %>
+<h5>Name: <%=station.name%></h5>
+<li>Address: <%=station.address%></li>
+<li>Fuel Types: <%=station.fuel_types%></li>
+<li>Distance: <%=station.distance%></li>
+<li>Access Times: <%=station.access_times%></li>
+<% end %>
+
+</ol>
